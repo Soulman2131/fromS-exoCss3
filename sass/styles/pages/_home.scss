@@ -1,0 +1,33 @@
+//HEADER
+header {
+	width: 85%;
+	margin: 0 auto;
+	min-height: 95vh;
+}
+
+//MAIN
+#main {
+	width: 85%;
+	background: $color-white1;
+	margin: 0 auto;
+	padding: 7rem 0 0;
+	box-shadow: 0 0.2rem 1.2rem rgba($color-white1, 0.2);
+	img {
+		width: 100%;
+	}
+}
+
+//FOOTER
+footer {
+	background: $color-grey2;
+	min-height: 64rem;
+	width: 85%;
+	margin: 0 auto 7rem;
+	box-shadow: 0 2px 12px rgba($color-grey2, 0.2);
+
+	display: grid;
+	grid-template-columns: 50% 50%;
+	@media screen and (max-width: 80rem) {
+		grid-template-columns: 1fr;
+	}
+}

@@ -1,0 +1,25 @@
+//MIXINS
+
+//TITLE
+@mixin title {
+	font-family: $font-primary;
+	text-transform: uppercase;
+	// letter-spacing: 2px;
+}
+
+//FLEX
+@mixin flexsb {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+@mixin flexsa {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+@mixin flexc {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

@@ -1,0 +1,19 @@
+// MAIN
+
+@import "./styles/utils/variables";
+@import "./styles/utils/mixins";
+@import "./styles/base/animations";
+@import "./styles/base/base";
+@import "./styles/base/typographie";
+@import "./styles/base/utilities";
+
+@import "./styles/layout/header";
+@import "./styles/layout/nav";
+@import "./styles/layout/headline";
+@import "./styles/layout/choice";
+@import "./styles/layout/footer";
+@import "./styles/layout/form";
+
+@import "./styles/components/buttons";
+
+@import "./styles/pages/home";

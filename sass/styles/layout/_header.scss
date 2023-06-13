@@ -1,0 +1,22 @@
+.header {
+	position: relative;
+
+	//FS a mis df, jcc & aic pour centrer la box
+	// 🌹👌 La methode de Jason ne marche pas sur la box mais seulement sur les 2 span du h1 position: absolute; top: 55%; left: 50%; transform: translateX(-50%) translateY(-50%);
+
+	&-box {
+		min-height: 100vh; //Trésimportantdemettrele100vh
+		width: 100%;
+		@include flexc;
+		flex-direction: column;
+
+		transition: all 0.2s;
+		-webkit-transition: all 0.2s;
+		-moz-transition: all 0.2s;
+		-ms-transition: all 0.2s;
+		-o-transition: all 0.2s;
+
+		animation: moveInBottom 1.5s ease forwards;
+		-webkit-animation: moveInBottom 1.5s ease forwards;
+	}
+}

@@ -1,0 +1,40 @@
+.headline {
+	width: 80%;
+	margin: 0 auto;
+	&-span {
+		font-size: 1.5rem;
+		position: relative;
+		display: block;
+		&::before,
+		&::after {
+			content: "";
+			width: 37%;
+			height: 1px;
+			background: $color-grey1;
+			position: absolute;
+			top: 50%; // Cest lui qui le centre sur le texte
+			transform: translateY(-50%);
+			-webkit-transform: translateY(-50%);
+			-moz-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			-o-transform: translateY(-50%);
+
+			@media screen and (max-width: 90rem) {
+				width: 30%;
+			}
+			@media screen and (max-width: 55rem) {
+				width: 24%;
+			}
+		}
+		&::before {
+			left: 0;
+		}
+		&::after {
+			right: 0;
+		}
+	}
+	&-paragraphe {
+		line-height: 2.5;
+		width: 60%;
+	}
+}

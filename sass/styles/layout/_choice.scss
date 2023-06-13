@@ -1,0 +1,24 @@
+.choice {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	border-top: 1px solid $color-grey1;
+	@media screen and (max-width: 80rem) {
+		grid-template-columns: 1fr;
+	}
+	&-left,
+	&-right {
+		padding: 6rem;
+	}
+	&-left {
+		border-right: 1px solid $color-grey1;
+	}
+	&-span {
+		font-size: 1.4rem;
+		color: $color-black1;
+		font-weight: normal;
+	}
+	&-paragraphe {
+		line-height: 2.8;
+		margin: 2rem 0;
+	}
+}

@@ -1,0 +1,64 @@
+body {
+	font-family: $font-secondary;
+	text-align: center;
+	font-size: 2rem;
+	background: url(../assets/img/bg.jpg) fixed center/cover;
+	max-width: 130rem;
+	margin: 0 auto;
+
+	&::before {
+		content: "";
+		width: 100%;
+		height: 100%;
+		background-color: $color-black1;
+		position: absolute;
+		top: 0;
+		left: 0;
+		animation: moonLight 1.5s ease forwards 0.15s;
+		-webkit-animation: moonLight 1.5s ease forwards 0.15s;
+	}
+}
+
+//HEADER
+header {
+	color: $color-white1;
+}
+
+//HEADING
+.heading-primary {
+	font-size: 9rem;
+	margin-bottom: 4rem;
+	@include title;
+
+	&--main {
+		display: block;
+		letter-spacing: 1rem;
+	}
+	&--sub {
+		display: block;
+		letter-spacing: 0.8rem;
+	}
+	@media screen and (max-width: 920px) {
+		font-size: 4rem;
+	}
+}
+.heading-secondary {
+	@include title;
+	font-size: 4rem;
+	margin: 6rem 0 2rem;
+	@media screen and (max-width: 920px) {
+		font-size: 2rem;
+	}
+}
+
+.heading-tertiary {
+	@include title;
+	margin: 3rem 0;
+	&-footer {
+		@include title;
+		font-size: 1.8rem;
+		text-align: left;
+		padding-left: 4rem;
+		color: $color-grey3;
+	}
+}

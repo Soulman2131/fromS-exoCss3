@@ -1,0 +1,58 @@
+//PARAGRAPHE
+.paragraphe {
+	width: 80%;
+	font-style: italic;
+	font-size: 1.5rem;
+	margin: 4rem auto 6rem;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+}
+
+//ICONE
+.icon {
+	display: inline-block;
+	border: 2px solid lightblue;
+	background-color: $color-grey1;
+	height: 6rem;
+	width: 6rem;
+	border-radius: 15rem;
+	-webkit-border-radius: 15rem;
+	-moz-border-radius: 15rem;
+	-ms-border-radius: 15rem;
+	-o-border-radius: 15rem;
+	font-size: 1.5rem;
+	@include flexc;
+	transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	&:hover {
+		background-color: $color-grey2;
+		transform: scale(1.05);
+		-webkit-transform: scale(1.05);
+		-moz-transform: scale(1.05);
+		-ms-transform: scale(1.05);
+		-o-transform: scale(1.05);
+	}
+
+	//On n'a pas besoin de la méthode de Jason ici avec le back-clip
+	&-logo {
+		display: inline-block;
+		background-image: linear-gradient(to right, green, red);
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+		padding: 4rem;
+		font-size: 2rem;
+	}
+}
+
+//UL>LI
+ul {
+	li {
+		list-style: none;
+	}
+}

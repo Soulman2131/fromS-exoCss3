@@ -1,0 +1,23 @@
+//FONT POLICE
+@font-face {
+	font-family: "inter";
+	src: url(../assets/fonts/inter/static/Inter-ExtraBold.ttf);
+}
+@font-face {
+	font-family: "merri";
+	src: url(../assets/fonts/merriweather/Merriweather-Light.ttf);
+}
+
+$font-primary: inter, sans-serif;
+$font-secondary: merri, serif;
+
+//COLOR
+
+$color-black1: rgb(17, 17, 17);
+
+$color-white1: rgb(243, 243, 243);
+$color-white2: rgb(241, 203, 203);
+
+$color-grey1: rgb(209, 209, 209);
+$color-grey2: rgb(233, 233, 233);
+$color-grey3: rgb(105, 105, 105);
